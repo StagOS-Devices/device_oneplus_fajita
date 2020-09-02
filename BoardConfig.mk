@@ -28,11 +28,11 @@ TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.oneplus_fajit
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
-# Prebuilt TWRP BLACK recovery
-TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := device/twrp/black/fajita/ramdisk-recovery.cpio
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/oneplus/common
+
+# Prebuilt TWRP recovery
+TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := recovery/twrp/evox/device/oneplus/fajita/ramdisk-recovery.cpio
 
 # inherit from the proprietary version
 -include vendor/oneplus/fajita/BoardConfigVendor.mk
